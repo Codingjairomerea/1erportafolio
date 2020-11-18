@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"/>
     <head>
-        <meta charset="UTG-8"
+        <meta charset= "UTF-8">
         <title>Jairo Merea</title>
         <link rel="icon" type="image/png" href="images/favicon.png"/>
     </head>
@@ -14,13 +14,13 @@
             <nav>
                 <ol>
                     <li>
-                        <a>Portafolio</a>
+                        <a href="#portafolio">Portafolio</a>
                     </li>
                     <li>
                         <a href="#">Experiencia</a>
                     </li>
                     <li>
-                        <a>Trabajemos Juntos</a>
+                        <a href="#">Trabajemos Juntos</a>
                     </li>
                 </ol>
             </nav>
@@ -35,7 +35,7 @@
             <img src="images/hero.jpg" width="500" height="300" 
             alt="Imagen principal del sitio"/>
         </section>
-        <section>
+        <section id="portafolio">
             <h2>Portafolio (Proyectos Destacados)</h2>
             <article>
                 <h3>Platzi Video</h3>
@@ -58,7 +58,13 @@
                 <a>Enlace </a>
             </article>
         </section>
-        <section>Seccion contacto</section>
+        <section>
+            <form action="/suscripcion/">
+                <h3>¿Creamos algo junto?</h3>
+                <input type="text" placeholder="Dejame tu email" id="email">
+                <button>Enviar</button>
+            </form>
+        </section>
         <footer>footer</footer>
     </body>
 </html>

@@ -1,3 +1,20 @@
+/*reglas: EL CONJUNTO DE TODO LO DE ABAJO
+selectores: cOMO IDENTIFICAR UN ELEMENTO HTML
+declaraciones: LO QUE HACEMOS CON EL SELECTOR
+propiedades: LO QUE HACEMOS CON EL ELEMENTO
+valores: LOS VALORES QUE ESPERAN PARA ACTUAR DE FORMA CORRECTO*/
+
+
+
 header {
     background: pink;
 }
+
+/* Selector de etiqueta: 
+Example: header - sectoion - article - nav
+Selector descendente: de elementos hijos
+Example: body header div nav ol li a {}
+Selector id: para un solo elemento
+Example: #portafolio
+Selector  clase: puedes usar en varios
+Example:.portafolio

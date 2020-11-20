@@ -17,4 +17,36 @@ Example: body header div nav ol li a {}
 Selector id: para un solo elemento
 Example: #portafolio
 Selector  clase: puedes usar en varios
-Example:.portafolio
+Example:.portafolio*/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -.2;
+}
+
+.project_details {
+    width: 500px;
+}
+.project_imageContainer{
+    width: 500px;
+}
+
+.hero {
+    height: 300px;
+}

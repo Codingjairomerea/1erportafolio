@@ -39,9 +39,23 @@ h1 {
     line-height: 1.5;
     letter-spacing: -.2;
     color: white;
+    margin: 100px 150px  ;
 }
 h1 strong {
     color: #026fff;
+}
+
+.project {
+    /* border-top: 10px solid red;
+    border-bottom: 10px solid green;
+    border-left: 10px solid orange;
+    border-right: 10px solid pink; */
+    /* border-color: red;
+    border-width: 15px;
+    border-style: solid; */
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .project_details {

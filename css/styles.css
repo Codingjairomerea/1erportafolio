@@ -21,6 +21,7 @@ Example:.portafolio*/
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
 }
 
 h1,
@@ -45,6 +46,10 @@ h1 strong {
     color: #026fff;
 }
 
+.portfolio {
+    background: #fafafa;
+}
+
 .project {
     /* border-top: 10px solid red;
     border-bottom: 10px solid green;
@@ -55,7 +60,10 @@ h1 strong {
     border-style: solid; */
     border: 1px solid gray;
     border-radius: 10px;
+    margin: 10px;
     margin-bottom: 15px;
+    padding: 20px;
+    background: white;
 }
 
 .project_details {
@@ -68,11 +76,33 @@ h1 strong {
 .header {
     background-color: #1b2127;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {
+    display: flex;
+    height: inherit;
 }
 
 .header a {
     color: white;
     text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+
+}
+
+.menu {
+    height: inherit;
 }
 
 .hero {
@@ -83,3 +113,27 @@ h1 strong {
     background-repeat: no-repeat;
     background-position-x: right;
 }
+
+.flexbox {
+display: flex;
+flex-wrap: wrap;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    margin: 5px;
+    flex-shrink: 0;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+} 

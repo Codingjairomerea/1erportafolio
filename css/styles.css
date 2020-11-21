@@ -40,7 +40,7 @@ h1 {
     line-height: 1.5;
     letter-spacing: -.2;
     color: white;
-    margin: 100px 150px  ;
+    margin: 0;
 }
 h1 strong {
     color: #026fff;
@@ -78,7 +78,9 @@ h1 strong {
     color: white;
     display: flex;
     justify-content: space-between;
-    height: 90px;
+    height: 70px;
+    align-items: center;
+
 }
 
 .header ol {
@@ -112,6 +114,8 @@ h1 strong {
     background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position-x: right;
+    display: flex;
+    align-items: center;
 }
 
 .flexbox {
@@ -137,3 +141,11 @@ ul {
 figure {
     margin: 0;
 } 
+
+.footer {
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

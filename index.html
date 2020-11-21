@@ -11,6 +11,7 @@
     </head>
     <body>
         <header class="header">
+            <div class="container">
                 <figure class="logo">
                     <img src="images/logo.png" height="50" alt="Logo de http://coding.jairomerea.com"/>
                 </figure>
@@ -27,74 +28,128 @@
                     </li>
                 </ol>
             </nav>
+            </div>
         </header>
         <section class="hero">
-            <h1>
-                Hola soy <strong>Jairo Merea</strong>,
-                <br> Desarrollar <strong>JavaScript</strong>
-                 con <br> pasión con la <strong>calidad</strong>
-            </h1>
-            <!-- <img src="images/hero.jpg" width="500" height="300" 
-            alt="Imagen principal del sitio"/> -->
+            <div class="container">
+                <h1>
+                    Hola soy <strong>Jairo Merea</strong>,
+                    <br> Desarrollar <strong>JavaScript</strong>
+                     con <br> pasión con la <strong>calidad</strong>
+                </h1>
+                <img claas='hero_image'  src="images/hero.jpg" width="500" height="300" 
+                alt="Imagen principal del sitio"/>
+            </div>
         </section>
         <section id="portafolio" class="portfolio">
-            <h2>Portafolio (Proyectos Destacados)</h2>
-            <article class="project">
-            <div class="project_details">
-                    <h3 class="project_title">Platzi Video</h3>
-                    <h6 class="project_course">React Native / React</h6>
-                    <p class="project_date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-                    <p class="project_url"><small><strong>Puedes verlo en:</strong>
-                         wwww.coding.jairomerea.com</small></p>
-                    <p class="project_description">Este es un texto que debe indicar 
-                        una breve descripción del proyecto</p>
-            </div>
-            <figure class="project_imageContainer">
-                <img class="project_image" src="images/platzi-video-react-native.png" 
-                alt="Proyecto del curso de react native" width="500"/>
-            </figure>
-            </article>
-            <article class="project">
-            <div class="project_details">
-                    <h3 class="project_title">Platzi Video</h3>
-                    <h6 class="project_course">React Native / React</h6>
-                    <p class="project_date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
-                    <p class="project_url"><small><strong>Puedes verlo en:</strong>
-                         wwww.coding.jairomerea.com</small></p>
-                    <p class="project_description">Este es un texto que debe indicar 
-                        una breve descripción del proyecto</p>
-            </div>
-            <figure class="project_imageContainer">
-                <img class="project_image" src="images/platzi-video-react-native.png" 
-                alt="Proyecto del curso de react native" width="500"/>
-            </figure>
-            </article>
-        </section>
-        <section id="eventos">
-            <h2>Más sobre mi experiencia</h2>
-            <article class="event">
-                <figure class="event_imageContainer">
-                    <img class="event_image" src="images/platzi-conf.jpg"/ width="500">
+            <div class="container">
+                <h2>Portafolio (Proyectos Destacados)</h2>
+                <article class="project">
+                <div class="project_details">
+                        <h3 class="project_title">Platzi Video</h3>
+                        <h6 class="project_course">React Native / React</h6>
+                        <p class="project_date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+                        <p class="project_url"><small><strong>Puedes verlo en:</strong>
+                             wwww.coding.jairomerea.com</small></p>
+                        <p class="project_description">Este es un texto que debe indicar 
+                            una breve descripción del proyecto</p>
+                </div>
+                <figure class="project_imageContainer">
+                    <img class="project_image" src="images/platzi-video-react-native.png" 
+                    alt="Proyecto del curso de react native" width="500"/>
                 </figure>
-                <h3 class="event_title">PlatziConf México 2018</h3>
-                <p class="event_description">Descripción del evento</p>
-                <a class="event_url" href="https://youtu.be/ExsGyZDBlJQ"
-                target="_blank">Enlace </a>
-            </article>
+                </article>
+                <article class="project">
+                <div class="project_details">
+                        <h3 class="project_title">Platzi Video</h3>
+                        <h6 class="project_course">React Native / React</h6>
+                        <p class="project_date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+                        <p class="project_url"><small><strong>Puedes verlo en:</strong>
+                             wwww.coding.jairomerea.com</small></p>
+                        <p class="project_description">Este es un texto que debe indicar 
+                            una breve descripción del proyecto</p>
+                </div>
+                <figure class="project_imageContainer">
+                    <img class="project_image" src="images/platzi-video-react-native.png" 
+                    alt="Proyecto del curso de react native" width="500"/>
+                </figure>
+                </article>
+            </div>
+        </section>
+        <div class="container">
+            <h2 class="event_list_title">Más sobre mi experiencia</h2>
+        </div>
+        <section id="eventos" class="event_list">
+            <div class="container">
+                <article class="event">
+                    <figure class="event_imageContainer">
+                        <img class="event_image" src="images/platzi-conf.jpg"/ width="500">
+                    </figure>
+                    <div class="event_detail">
+                        <h3 class="event_title">PlatziConf México 2018</h3>
+                        <p class="event_description">Descripción del evento</p>
+                        <a class="event_url" href="https://youtu.be/ExsGyZDBlJQ"
+                        target="_blank">Enlace </a>
+                    </div>
+                </article>
+                <article class="event">
+                    <figure class="event_imageContainer">
+                        <img class="event_image" src="images/platzi-conf.jpg"/ width="500">
+                    </figure>
+                    <div class="event_detail">
+                        <h3 class="event_title">PlatziConf México 2018</h3>
+                        <p class="event_description">Descripción del evento</p>
+                        <a class="event_url" href="https://youtu.be/ExsGyZDBlJQ"
+                        target="_blank">Enlace </a>
+                    </div>
+                </article>
+                <article class="event">
+                    <figure class="event_imageContainer">
+                        <img class="event_image" src="images/platzi-conf.jpg"/ width="500">
+                    </figure>
+                    <div class="event_detail">
+                        <h3 class="event_title">PlatziConf México 2018</h3>
+                        <p class="event_description">Descripción del evento</p>
+                        <a class="event_url" href="https://youtu.be/ExsGyZDBlJQ"
+                        target="_blank">Enlace </a>
+                    </div>
+                </article>
+                <article class="event">
+                    <figure class="event_imageContainer">
+                        <img class="event_image" src="images/platzi-conf.jpg"/ width="500">
+                    </figure>
+                    <div class="event_detail">
+                        <h3 class="event_title">PlatziConf México 2018</h3>
+                        <p class="event_description">Descripción del evento</p>
+                        <a class="event_url" href="https://youtu.be/ExsGyZDBlJQ"
+                        target="_blank">Enlace </a>
+                    </div>
+                </article>
+            </div>
         </section>
         <section id="contacto" class="contact">
-            <form action="/suscripcion/" class="email">
-                <h3>¿Creamos algo junto?</h3>
-                <input type="text" placeholder="Dejame tu email" id="email">
-                <button>Enviar</button>
-            </form>
+            <div class="container">
+                <form action="/suscripcion/" class="email">
+                    <h3>¿Creamos algo junto?</h3>
+                    <input type="text" placeholder="Dejame tu email" id="email">
+                    <button>Enviar</button>
+                </form>
+                <div class="social">
+                    <a href="https://twitter.com/leonidasesteban" class="social_link_twiter"></a>
+                    <a href="https://facebook.com/leonidas.esteban" class="social_link_facebook"></a>
+                    <a href="https://github.com/codingjairomerea" class="social_link_github"></a>
+                    <a href="https://instagram.com/leonidasesteban" class="social_link_instagram"></a>
+                </div>
+            </div>
         </section>
         <footer class="footer">
-            <div>
-               <p>Portafolio Jairo Merea</p> 
-            </div>
-            <div>
-                <p>Diseñado por Coding Jairo Merea</p>
+            <div class="container">
+                <div>
+                   <p>Portafolio Jairo Merea</p> 
+                </div>
+                <div>
+                    <p>Diseñado por Coding Jairo Merea</p>
+                </div>
             </div>
         </footer>
     </body>

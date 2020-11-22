@@ -233,7 +233,7 @@ h2 {
     text-transform: uppercase;
     font-weight: 300;
     color: #EA6B64;
-    padding: 60px 0;
+    /* padding: 60px 0; */
 }
 
 .hero_details {
@@ -243,6 +243,7 @@ h2 {
 
 .hero_details_title {
     border: 1px solid red;
+    margin: 60px 0;
 }
 
 .hero_details_paragraph {
@@ -394,7 +395,7 @@ figure {
 }
 
 .container {
-    width: 1000px;
+    width: 1169px;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;

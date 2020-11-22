@@ -4,11 +4,10 @@ declaraciones: LO QUE HACEMOS CON EL SELECTOR
 propiedades: LO QUE HACEMOS CON EL ELEMENTO
 valores: LOS VALORES QUE ESPERAN PARA ACTUAR DE FORMA CORRECTO*/
 
-
-
 header {
     background: pink;
 }
+
 
 /* Selector de etiqueta: 
 Example: header - sectoion - article - nav
@@ -20,7 +19,7 @@ Selector  clase: puedes usar en varios
 Example:.portafolio*/
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Rubik', sans-serif;
     margin: 0;
 }
 
@@ -29,19 +28,18 @@ h2,
 h3,
 h4,
 h5,
-h6
-{
-    font-family: 'Fjalla One', sans-serif;
+h6 {
+    font-family: 'Rufina', serif;
     font-weight: normal;
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 1.5;
-    letter-spacing: -.2;
-    color: white;
-    margin: 0;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    color: #002D5B;
 }
+
 h1 strong {
     color: #026fff;
 }
@@ -53,6 +51,10 @@ h2 {
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 40px;
+}
+
+.logo {
+    padding: 0px 45px;
 }
 
 .portfolio {
@@ -87,51 +89,47 @@ h2 {
 
 .project_course {
     margin: 10px 0;
-    
-
 }
 
 .project_date {
     margin: 10px 0;
-
 }
 
 .project_url {
     margin: 10px 0;
-
 }
 
 .project_description {
     font-size: 20px;
-
 }
-
 
 .project_details {
     width: 500px;
 }
 
-.project_imageContainer{
+.project_imageContainer {
     width: 500px;
 }
 
-.project strong{
-    font-family:'Fjalla One', sans-serif;;
+.project strong {
+    font-family: 'Fjalla One', sans-serif;
+    ;
 }
 
 .header {
-    background-color: #1b2127;
-    color: white;
+    background-color: white;
+    color: #202020;
     display: flex;
     justify-content: space-between;
-    height: 70px;
+    width: 1423px;
+    height: 103px;
     align-items: center;
-
 }
 
 .header ol {
     display: flex;
     height: inherit;
+    padding: 0 0;
 }
 
 .header ol li {
@@ -140,13 +138,70 @@ h2 {
 }
 
 .header a {
-    color: white;
+    color: #000025;
     text-decoration: none;
     height: inherit;
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 22.5px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+}
 
+.header a:hover {
+    color: #ec5b53;
+    position: relative;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.container_header_contact {
+    height: 103px;
+    position: relative;
+}
+
+.header_contact {
+    margin: 0px 45px;
+    width: 191px;
+    height: 54px;
+    padding: 54px 191px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 0 0;
+    ;
+    position: inherit;
+    top: 50%;
+    transform: translateY(-50%);
+    --background-color: #EC5B53;
+    --border-size: 2px;
+    --accent-color: #E44239;
+}
+
+.header_contact_hover_pop::before {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+    transition: transform 0.4s;
+    transition-timing-function: cubic-bezier(.75, 1.67, .56, .57);
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.header_contact_hover_pop:hover::before,
+.header_contact_hover_pop:focus::before {
+    transform: scaleX(1);
 }
 
 .menu {
@@ -154,12 +209,13 @@ h2 {
 }
 
 .hero {
-    height: 300px;
+    height: 697px;
     /* background-image: url('../images/hero.jpg'); */
-    background-color: #1b2127;
+    background-image: url(https://jairomerea.com/wp-content/uploads/2020/portafolio/background.jpg);
     /* background-size: 500px 300px;
-    background-repeat: no-repeat;
     background-position-x: right; */
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -169,9 +225,35 @@ h2 {
     object-fit: cover;
 }
 
+.hero_span {
+    border: 1px solid red;
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #EA6B64;
+    padding: 60px 0;
+}
+
+.hero_details {
+    color: #002D5B;
+    width: 630px;
+}
+
+.hero_details_title {
+    border: 1px solid red;
+}
+
+.hero_details_paragraph {
+    border: 1px solid red;
+    color: #73798B;
+    font-family: 'Rubik', sans-serif;
+}
+
 .flexbox {
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .box {
@@ -185,13 +267,13 @@ flex-wrap: wrap;
 ol,
 ul {
     margin: 0;
-    padding: 0;
+    padding: 0, 45px;
     list-style: none;
 }
 
 figure {
     margin: 0;
-} 
+}
 
 .footer {
     background-color: #1b2127;
@@ -200,7 +282,6 @@ figure {
     align-items: center;
     justify-content: space-between;
 }
-
 
 .event_list {
     display: flex;
@@ -254,17 +335,14 @@ figure {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
-.social {
-}
+.social {}
 
 .social_link_twiter,
 .social_link_facebook,
 .social_link_github,
-.social_link_instagram
- {
+.social_link_instagram {
     width: 50px;
     height: 50px;
     display: inline-block;

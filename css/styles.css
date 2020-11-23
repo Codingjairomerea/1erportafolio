@@ -209,6 +209,7 @@ body {
 }
 
 .hero_buttons_b {
+    border: 1px solid;
     border-color: rgba(236, 91, 83, 0.25);
     margin: 45px 19px auto;
     color: #464d65;
@@ -300,6 +301,124 @@ body {
     font-weight: 500;
     margin: 0 0 auto 100px;
     color: #000a2d;
+}
+
+.mastered_technologies {
+    width: 1169px;
+    height: 729px;
+    padding: 0 127px;
+}
+
+.container_mastered_technologies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mastered_technologies_h2 {
+    color: #000a2d;
+    display: block;
+    margin: 50px 0;
+    font-family: "Rufina", serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.container_mastered_technologies_1,
+.container_mastered_technologies_2,
+.container_mastered_technologies_3 {
+    border: 1px solid #e1ebf7;
+    border-color: auto, 0.25;
+    width: 370px;
+    height: 445px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    text-align: center;
+    --background-color: #EC5B53;
+    --accent-color: #ff3d1c;
+}
+
+.container_mastered_technologies_1::before,
+.container_mastered_technologies_2::before,
+.container_mastered_technologies_3::before {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.4s;
+    transition-timing-function: linear;
+}
+
+.container_mastered_technologies_1:hover::before,
+.container_mastered_technologies_1:focus::before,
+.container_mastered_technologies_2:hover::before,
+.container_mastered_technologies_2:focus::before,
+.container_mastered_technologies_3:hover::before,
+.container_mastered_technologies_3:focus::before {
+    transform: scaleY(1);
+}
+
+.container_mastered_technologies_1:hover h4,
+.container_mastered_technologies_1:focus h4,
+.container_mastered_technologies_1:hover p,
+.container_mastered_technologies_1:focus p,
+.container_mastered_technologies_2:hover h4,
+.container_mastered_technologies_2:focus h4,
+.container_mastered_technologies_2:hover p,
+.container_mastered_technologies_2:focus p,
+.container_mastered_technologies_3:hover h4,
+.container_mastered_technologies_3:focus h4,
+.container_mastered_technologies_3:hover p,
+.container_mastered_technologies_3:focus p {
+    color: white;
+}
+
+.container_technology_image_1,
+.container_technology_image_2,
+.container_technology_image_3 {
+    width: 100px;
+    height: 100px;
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    align-items: center;
+    background: #fff4f4;
+    border-radius: 70px;
+}
+
+.technologie_h4_1,
+.technologie_h4_2,
+.technologie_h4_3 {
+    color: #1c165c;
+    font-family: "Rufina", serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0px 0 6px 0;
+    transition: color 0.4s linear;
+}
+
+.technologie_p_1,
+.technologie_p_2,
+.technologie_p_3 {
+    font-family: "Rubik", sans-serif;
+    line-height: 30px;
+    font-size: 16px;
+    color: #57667e;
+    font-weight: normal;
+    transition: color 0.4s linear;
 }
 
 .flexbox {

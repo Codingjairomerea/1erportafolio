@@ -1,119 +1,6 @@
-/*reglas: EL CONJUNTO DE TODO LO DE ABAJO
-selectores: cOMO IDENTIFICAR UN ELEMENTO HTML
-declaraciones: LO QUE HACEMOS CON EL SELECTOR
-propiedades: LO QUE HACEMOS CON EL ELEMENTO
-valores: LOS VALORES QUE ESPERAN PARA ACTUAR DE FORMA CORRECTO*/
-
-header {
-    background: pink;
-}
-
-
-/* Selector de etiqueta: 
-Example: header - sectoion - article - nav
-Selector descendente: de elementos hijos
-Example: body header div nav ol li a {}
-Selector id: para un solo elemento
-Example: #portafolio
-Selector  clase: puedes usar en varios
-Example:.portafolio*/
-
 body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Rufina', serif;
-    font-weight: normal;
-}
-
-h1 {
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 700;
-    color: #002D5B;
-}
-
-h1 strong {
-    color: #026fff;
-}
-
-h2 {
-    color: #026fff;
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 40px;
-}
-
-.logo {
-    padding: 0px 45px;
-}
-
-.portfolio {
-    background: #fafafa;
-    padding: 20px;
-}
-
-.project {
-    /* border-top: 10px solid red;
-    border-bottom: 10px solid green;
-    border-left: 10px solid orange;
-    border-right: 10px solid pink; */
-    /* border-color: red;
-    border-width: 15px;
-    border-style: solid; */
-    border: 1px solid gray;
-    border-radius: 10px;
-    /* margin: 10px; */
-    margin-bottom: 15px;
-    padding: 20px;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.project_title {
-    font-size: 30px;
-    margin-top: 0;
-    margin-bottom: 10px 0;
-}
-
-.project_course {
-    margin: 10px 0;
-}
-
-.project_date {
-    margin: 10px 0;
-}
-
-.project_url {
-    margin: 10px 0;
-}
-
-.project_description {
-    font-size: 20px;
-}
-
-.project_details {
-    width: 500px;
-}
-
-.project_imageContainer {
-    width: 500px;
-}
-
-.project strong {
-    font-family: 'Fjalla One', sans-serif;
-    ;
 }
 
 .header {
@@ -137,7 +24,15 @@ h2 {
     height: inherit;
 }
 
-.header a {
+.header_logo {
+    padding: 0px 45px;
+}
+
+.menu {
+    height: inherit;
+}
+
+.menu_item {
     color: #000025;
     text-decoration: none;
     height: inherit;
@@ -149,7 +44,7 @@ h2 {
     border: 0;
 }
 
-.header a:hover {
+.menu_item:hover {
     color: #ec5b53;
     position: relative;
     transition-property: all;
@@ -172,7 +67,7 @@ h2 {
     background-color: var(--background-color);
     color: white;
     font-family: inherit;
-    font-size: 16px;
+    font-size: 14px;
     padding: 0 0;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
@@ -204,16 +99,21 @@ h2 {
     transform: scaleX(1);
 }
 
-.menu {
+.container {
+    width: 1169px;
+    height: 700px;
+    margin: 0 127px;
+    display: inherit;
+    justify-content: inherit;
     height: inherit;
+    align-items: inherit;
+    flex-wrap: inherit;
 }
 
 .hero {
-    height: 697px;
-    /* background-image: url('../images/hero.jpg'); */
+    height: 700px;
     background-image: url(https://jairomerea.com/wp-content/uploads/2020/portafolio/background.jpg);
-    /* background-size: 500px 300px;
-    background-position-x: right; */
+    margin: none;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -223,7 +123,7 @@ h2 {
 
 .hero_container_image {
     width: 539px;
-    height: 697px;
+    height: 700px;
     bottom: 0;
     display: flex;
     align-items: flex-end;
@@ -238,12 +138,12 @@ h2 {
 
 .hero_span {
     position: relative;
+    margin: auto 0 0 0;
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 300;
     color: #EA6B64;
-    /* padding: 60px 0; */
 }
 
 .hero_details {
@@ -252,12 +152,18 @@ h2 {
 }
 
 .hero_details_title {
+    font-family: 'Rufina', sans-serif;
+    font-size: 70px;
     margin: 60px 0;
+    font-weight: 700;
+    line-height: 1.2;
 }
 
 .hero_details_paragraph {
-    color: #73798B;
     font-family: 'Rubik', sans-serif;
+    color: #464d65;
+    font-weight: normal;
+    line-height: 30px;
     margin: 0;
 }
 
@@ -268,7 +174,7 @@ h2 {
     height: 54px;
     width: 173px;
     padding: 0;
-    margin: 45px 0;
+    margin: 45px 0 auto;
     border-radius: 5px;
     color: white;
     font-family: 'Rubik', sans-serif;
@@ -302,16 +208,9 @@ h2 {
     transform: scaleX(1);
 }
 
-
-/* .hero_buttons_a:hover,
-.hero_buttons_a:focus {
-    color: whitesmoke;
-} */
-
 .hero_buttons_b {
-    border: 1px solid #EC5B53;
     border-color: rgba(236, 91, 83, 0.25);
-    margin: 45px 19px;
+    margin: 45px 19px auto;
     color: #464d65;
     background: var(--background-color);
     transition: color 0.4s linear;
@@ -343,6 +242,64 @@ h2 {
 .hero_buttons_b:hover,
 .hero_buttons_b:focus {
     color: white;
+}
+
+.about {
+    width: 1169px;
+    height: 700px;
+    padding: 0 127px;
+    display: flex;
+}
+
+.about_details,
+.about_contact {
+    width: 584.5px;
+    height: inherit;
+}
+
+.about_details_h3 {
+    margin: 207px 100px 56px 0;
+    font-family: 'Rufina', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000a2d;
+}
+
+.about_details_p1,
+.about_details_p2 {
+    margin: 0 100px 0 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #10285d;
+    line-height: 30px;
+}
+
+.about_details_p2 {
+    margin: 42px 100px 0 0;
+}
+
+.about_contact_h3 {
+    font-family: 'Rufina', sans-serif;
+    margin: 207px 0 64px 100px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000a2d;
+}
+
+.about_contact_p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    margin: 0 0 31px 100px;
+    font-weight: 500;
+    color: #464d65;
+}
+
+.about_contact_a {
+    font-family: 'Rubik', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    margin: 0 0 auto 100px;
+    color: #000a2d;
 }
 
 .flexbox {
@@ -485,14 +442,4 @@ figure {
 
 .email h3 {
     font-family: 'Source Sans Pro', sans-serif;
-}
-
-.container {
-    width: 1169px;
-    margin: 0 auto;
-    display: inherit;
-    justify-content: inherit;
-    height: inherit;
-    align-items: inherit;
-    flex-wrap: inherit;
 }

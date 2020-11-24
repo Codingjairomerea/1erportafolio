@@ -78,6 +78,10 @@
         --accent-color: #E44239;
     }
     
+    .header_contact_hover_pop {
+        cursor: pointer;
+    }
+    
     .header_contact_hover_pop::before {
         content: '';
         position: absolute;
@@ -182,6 +186,7 @@
         font-weight: 500;
         background-color: var(--background-color);
         z-index: 1;
+        cursor: pointer;
         /* transition: color ease-in-out; */
         --background-color: #EC5B53;
         --accent-color: #E44239;
@@ -613,6 +618,7 @@
         font-size: 16px;
         font-family: "rubik", sans-serif;
         color: white;
+        cursor: pointer;
     }
     
     .social {}

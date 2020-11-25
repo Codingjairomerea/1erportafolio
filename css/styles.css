@@ -302,6 +302,13 @@
         font-weight: 500;
         color: #464d65;
         text-transform: capitalize;
+        transition: 0.5s;
+    }
+    
+    .about_contact_p:hover {
+        transform: translate(15px, -15px);
+        text-decoration: underline;
+        font-size: 30px;
     }
     
     .about_contact_a {
@@ -456,6 +463,7 @@
         font-size: 48px;
         font-weight: 600;
         color: #000a2d;
+        text-transform: capitalize;
     }
     
     .container_portfolio {
@@ -470,7 +478,11 @@
         width: 750px;
         height: 750px;
         margin: 15px 0px 15px 0px;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.50);
+        border-radius: 50px;
+        transition: 0.4s linear;
     }
+    
     
     .container_portfolio_image_right_a {
         width: inherit;
@@ -484,9 +496,10 @@
         object-fit: cover;
         border-radius: 50px;
         transition: 0.4s linear;
+        position: absolute;
     }
     
-    .portfolio_image_right:hover {
+    .container_portfolio_image_right:hover {
         filter: brightness(200%);
         transform: translate(15px, -15px);
     }
@@ -535,11 +548,11 @@
         width: inherit;
         height: inherit;
         object-fit: cover;
+        position: relative;
         border-radius: 50px;
         transition: all 500ms ease-in-out;
 
     }
-    
     
     
     .contact {

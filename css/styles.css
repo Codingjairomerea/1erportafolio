@@ -4,6 +4,9 @@
     }
     
     .header {
+        POSITION: FIXED;
+        TOP: 0;
+        z-index: 3;
         background-color: white;
         color: #202020;
         display: flex;
@@ -124,6 +127,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-top: 103px;
     }
     
     .hero_container_image {

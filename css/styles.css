@@ -26,6 +26,7 @@
     
     .header_logo {
         padding: 0px 45px;
+        cursor: pointer;
     }
     
     .menu {
@@ -269,6 +270,7 @@
         font-size: 30px;
         font-weight: 700;
         color: #000a2d;
+        text-transform: capitalize;
     }
     
     .about_details_p1,
@@ -290,6 +292,7 @@
         font-size: 40px;
         font-weight: 700;
         color: #000a2d;
+        text-transform: capitalize ;
     }
     
     .about_contact_p {
@@ -298,6 +301,11 @@
         margin: 0 0 31px 100px;
         font-weight: 500;
         color: #464d65;
+        text-transform: capitalize;
+    }
+    
+    .about_contact_a {
+        text-decoration: none;
     }
     
     .about_contact_a {
@@ -336,13 +344,14 @@
         font-size: 48px;
         font-weight: 600;
         line-height: 1.2;
+        text-transform: capitalize;
     }
     
     .container_mastered_technologies_1,
     .container_mastered_technologies_2,
     .container_mastered_technologies_3 {
-        border: 1px solid #e1ebf7;
-        border-color: auto, 0.25;
+        border: 1px solid #ec5b53;
+        border-color: rgb(236, 91, 83, 0.25);
         width: 370px;
         height: 445px;
         display: flex;
@@ -473,6 +482,13 @@
         width: inherit;
         height: inherit;
         object-fit: cover;
+        border-radius: 50px;
+        transition: 0.4s linear;
+    }
+    
+    .portfolio_image_right:hover {
+        filter: brightness(200%);
+        transform: translate(15px, -15px);
     }
     
     .container_portfolio_image_left_1and2 {
@@ -488,6 +504,7 @@
         width: inherit;
         height: inherit;
         margin: none;
+        position: relative;
     }
     
     .container_portfolio_image_left_1,
@@ -495,18 +512,35 @@
         margin: 0 15px 0 15px;
         width: 360px;
         height: 360px;
+        transition: 0.4s linear;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.50);
+        cursor: pointer;
+        border-radius: 50px;
+       }
+    
+    .container_portfolio_image_left_1:hover,
+    .container_portfolio_image_left_2:hover {
+        filter: brightness(200%);
+        transform: translate(15px, -15px);
     }
+    
     
     .container_portfolio_image_left_1 {
         margin: 0 0 30px 0;
     }
     
+
     .portfolio_image_left_1,
     .portfolio_image_left_2 {
         width: inherit;
         height: inherit;
         object-fit: cover;
+        border-radius: 50px;
+        transition: all 500ms ease-in-out;
+
     }
+    
+    
     
     .contact {
         border: 0;
@@ -553,6 +587,7 @@
     .container_contact_right_image {
         object-fit: scale-down;
         object-position: left;
+        cursor: pointer;
     }
     
     .container_contact_left {

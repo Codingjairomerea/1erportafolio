@@ -1,25 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
     body {
         font-family: 'Rubik', sans-serif;
         margin: 0;
     }
     
     .header {
-        POSITION: FIXED;
+        POSITION: sticky;
         TOP: 0;
         z-index: 3;
         background-color: white;
         color: #202020;
         display: flex;
         justify-content: space-between;
-        width: 1423px;
+        width: 100%;
+        /* flex-wrap: wrap;
+        flex: 1; */
         height: 103px;
         align-items: center;
+        padding-left: 6%;
+        padding-right: 6%;
     }
     
     .header ol {
         display: flex;
         height: inherit;
         padding: 0 0;
+        margin: 0;
     }
     
     .header ol li {
@@ -30,12 +41,15 @@
     .header_logo {
         display: flex;
         flex-direction: column;
-        padding: 0px 45px;
+        /* padding: 0px 45px; */
         cursor: pointer;
     }
     
     .menu {
         height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     
     .menu_item {
@@ -68,7 +82,7 @@
         margin: 0px 45px;
         width: 191px;
         height: 54px;
-        padding: 54px 191px;
+        /* padding: 54px 191px; */
         border: none;
         border-radius: 5px;
         background-color: var(--background-color);
@@ -87,6 +101,7 @@
     
     .header_contact_hover_pop {
         cursor: pointer;
+        margin: 0;
     }
     
     .header_contact_hover_pop::before {
@@ -111,14 +126,17 @@
     }
     
     .container {
-        width: 1169px;
+        width: 88%;
         height: 700px;
-        margin: 0 127px;
+        /* padding: 0 127px; */
         display: inherit;
         justify-content: inherit;
         height: inherit;
         align-items: inherit;
         flex-wrap: inherit;
+        display: flex;
+        box-sizing: border-box;
+        margin: auto ;
     }
     
     .hero {
@@ -130,7 +148,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 103px;
+        /* margin-top: 103px; */
     }
     
     .hero_container_image {
@@ -259,10 +277,12 @@
     }
     
     .about {
-        width: 1169px;
+        width: 88%;
         height: 700px;
-        padding: 0 127px;
+        /* padding: 0 127px; */
         display: flex;
+        margin: auto;
+        justify-content: space-between;
     }
     
     .about_details,
@@ -331,9 +351,11 @@
     }
     
     .mastered_technologies {
-        width: 1169px;
+        width: 100%;
+        padding-left: 6%;
+        padding-right: 6%;
         height: 729px;
-        padding: 0 127px;
+        /* padding: 0 127px; */
         position: relative;
         display: flex;
         flex-direction: column;
@@ -458,14 +480,16 @@
     }
     
     .porfolio {
-        width: 1169px;
+        width: 88%;
         height: 1000px;
-        padding: 0 127px;
+        padding: 0;
         display: grid;
         align-content: center;
+        margin: auto;
     }
     
     .portfolio_h2 {
+        width: 100%;
         font-family: "Rufina", serif;
         font-size: 48px;
         font-weight: 600;
@@ -474,15 +498,17 @@
     }
     
     .container_portfolio {
+        width: 88%;
         display: flex;
         height: 810px;
         justify-content: space-between;
         align-items: center;
+        
     }
     
     .container_portfolio_image_right {
         margin: 0;
-        width: 750px;
+        width: 50%;
         height: 750px;
         margin: 15px 0px 15px 0px;
         box-shadow: 0 15px 25px rgba(0, 0, 0, 0.50);
@@ -498,7 +524,7 @@
     }
     
     .portfolio_image_right {
-        width: inherit;
+        width: 40%;
         height: inherit;
         object-fit: cover;
         border-radius: 50px;
@@ -512,7 +538,7 @@
     }
     
     .container_portfolio_image_left_1and2 {
-        width: inherit;
+        width: 25%;
         height: inherit;
         display: flex;
         flex-direction: column;
@@ -566,9 +592,11 @@
         border: 0;
         background-color: #fef8f8;
         color: black;
-        width: 1169px;
+        width: 100%;
+
         height: 700px;
-        padding: 0 127px;
+        padding-left: 6%;
+        padding-right: 6%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -707,8 +735,42 @@
     
     .footer {
         background-color: #1b2127;
+        width: 100%;
+        padding-left: 6%;
+        padding-right: 6%;
+        margin: auto;
         color: white;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+    
+    /* ---------------This is going to be the Media Queries Part--------------*/
+    
+/* Media Query for Desktop 1024 px */
+/* 
+@media screen and (max-width: 2560px) {
+
+}
+
+@media screen and (max-width: 1440px) {
+    
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+}
+
+@media screen and (max-width: 320px) {
+        
+} */

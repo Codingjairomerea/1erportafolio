@@ -31,7 +31,8 @@
         height: inherit;
         padding: 0 0;
         margin: 0;
-        flex-wrap: wrap
+        flex-wrap: wrap;
+        font-size: 16px;
     }
     
     .header ol li {
@@ -60,7 +61,7 @@
         display: flex;
         align-items: center;
         padding: 0 22.5px;
-        font-size: 16px;
+        font-size: 1em;
         font-weight: 500;
         border: 0;
     }
@@ -76,6 +77,7 @@
     .container_header_contact {
         height: 103px;
         position: relative;
+        padding-left: 22.5px;
     }
     
     
@@ -89,7 +91,7 @@
         background-color: var(--background-color);
         color: white;
         font-family: inherit;
-        font-size: 14px;
+        font-size: .9em;
         padding: 0 0;
         font-family: 'Rubik', sans-serif;
         font-weight: 500;
@@ -142,7 +144,7 @@
     }
     
     .hero {
-        height: 700px;
+        height: auto;
         background-image: url(https://jairomerea.com/wp-content/uploads/2020/portafolio/background.jpg);
         margin: none;
         background-repeat: no-repeat;
@@ -150,12 +152,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        align-items: flex-end;
         /* margin-top: 103px; */
     }
     
     .hero_container_image {
-        width: 539px;
-        height: 700px;
+
         bottom: 0;
         display: flex;
         align-items: flex-end;
@@ -164,7 +166,8 @@
     }
     
     .hero_image {
-        height: 90%;
+        width: 75%;
+        height: auto;
         object-fit: cover;
     }
     
@@ -172,7 +175,7 @@
         position: relative;
         margin: auto 0 0 0;
         font-family: 'Rubik', sans-serif;
-        font-size: 18px;
+        font-size: 1.125em;
         text-transform: uppercase;
         font-weight: 300;
         color: #EA6B64;
@@ -180,22 +183,26 @@
     
     .hero_details {
         color: #002D5B;
-        width: 630px;
+        width: 50%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+        font-size: 16px;
     }
     
     .hero_details_title {
         font-family: 'Rufina', sans-serif;
-        font-size: 70px;
+        font-size: 4.375em;
         margin: 60px 0;
         font-weight: 700;
         line-height: 1.2;
+        margin: 10% 0;
     }
     
     .hero_details_paragraph {
         font-family: 'Rubik', sans-serif;
         color: #464d65;
         font-weight: normal;
-        line-height: 30px;
+        line-height: 1em;
         margin: 0;
     }
     
@@ -204,7 +211,7 @@
         border: none;
         position: relative;
         height: 54px;
-        width: 173px;
+        width: 40%;
         padding: 0;
         margin: 45px 0 auto;
         border-radius: 5px;
@@ -244,7 +251,7 @@
     .hero_buttons_b {
         border: 1px solid;
         border-color: rgba(236, 91, 83, 0.25);
-        margin: 45px 19px auto;
+        margin: 10% auto 0 5%;
         color: #464d65;
         background: var(--background-color);
         transition: color 0.4s linear;
@@ -280,24 +287,43 @@
     
     .about {
         width: 88%;
-        height: 700px;
+        height: auto;
         /* padding: 0 127px; */
         display: flex;
         margin: auto;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
     
     .about_details,
     .about_contact {
-        width: 584.5px;
-        height: inherit;
+        width: 50%;
+        height: auto;
+        box-sizing: border-box;
+        font-size: 16px;
     }
     
+    .about_details {
+        padding-right: 5%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    
+    .about_contact {
+        padding-left: 5%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    
+    
     .about_details_h3 {
-        margin: 207px 100px 56px 0;
+        margin: 0 0 8% 0;
         font-family: 'Rufina', sans-serif;
-        font-size: 30px;
+        font-size: 1.875em;
         font-weight: 700;
         color: #000a2d;
         text-transform: capitalize;
@@ -305,21 +331,21 @@
     
     .about_details_p1,
     .about_details_p2 {
-        margin: 0 100px 0 0;
+        margin: 0 0 0 0;
         font-family: 'Rubik', sans-serif;
-        font-size: 16px;
+        font-size: 1em;
         color: #10285d;
         line-height: 30px;
     }
     
     .about_details_p2 {
-        margin: 42px 100px 0 0;
+        margin: 8% 0 0 0;
     }
     
     .about_contact_h3 {
         font-family: 'Rufina', sans-serif;
-        margin: 207px 0 64px 100px;
-        font-size: 40px;
+        margin: 0 0 10% 0;
+        font-size: 2.5em;
         font-weight: 700;
         color: #000a2d;
         text-transform: capitalize ;
@@ -327,8 +353,8 @@
     
     .about_contact_p {
         font-family: 'Rubik', sans-serif;
-        font-size: 20px;
-        margin: 0 0 31px 100px;
+        font-size: 1.25em;
+        margin: 0 0 10% 0;
         font-weight: 500;
         color: #464d65;
         text-transform: capitalize;
@@ -338,7 +364,7 @@
     .about_contact_p:hover {
         transform: translate(15px, -15px);
         text-decoration: underline;
-        font-size: 30px;
+        font-size: 1.875em;
     }
     
     .about_contact_a {
@@ -347,17 +373,17 @@
     
     .about_contact_a {
         font-family: 'Rubik', sans-serif;
-        font-size: 35px;
+        font-size: 1.25em;
         font-weight: 500;
-        margin: 0 0 auto 100px;
+        margin: 0 0 auto 0;
         color: #000a2d;
-    }
+    }   
     
     .mastered_technologies {
         width: 100%;
         padding-left: 6%;
         padding-right: 6%;
-        height: 729px;
+        height: auto;
         /* padding: 0 127px; */
         position: relative;
         display: flex;
@@ -366,6 +392,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 1;
+        font-size: 16px;
 
         /* background-color: rgba(225, 229, 232, 0.25); */
     }
@@ -375,6 +402,7 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        font-size: 16px;
     }
     
     .mastered_technologies_h2 {
@@ -382,11 +410,11 @@
         display: block;
         margin: 50px 0;
         font-family: "Rufina", serif;
-        font-size: 48px;
+        font-size: 3em;
         font-weight: 600;
         line-height: 1.2;
         text-transform: capitalize;
-
+        
     }
     
     .container_mastered_technologies_1,
@@ -468,7 +496,7 @@
     .technologie_h4_3 {
         color: #1c165c;
         font-family: "Rufina", serif;
-        font-size: 25px;
+        font-size: 1.5625em;
         font-weight: 700;
         margin: 0px 0 6px 0;
         transition: color 0.4s linear;
@@ -479,7 +507,7 @@
     .technologie_p_3 {
         font-family: "Rubik", sans-serif;
         line-height: 30px;
-        font-size: 16px;
+        font-size: 1em;
         color: #57667e;
         font-weight: normal;
         transition: color 0.4s linear;
@@ -492,12 +520,15 @@
         display: grid;
         align-content: center;
         margin: auto;
+        font-size: 16px;
     }
     
     .portfolio_h2 {
-        width: 100%;
+        margin-top: 10%;
+        width: 88%;
+        /* margin: auto; */
         font-family: "Rufina", serif;
-        font-size: 48px;
+        font-size: 3em;
         font-weight: 600;
         color: #000a2d;
         text-transform: capitalize;
@@ -509,6 +540,7 @@
         height: 810px;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 5%;
         
     }
     
@@ -607,6 +639,7 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+        font-size: 16px;
     }
     
     .container_contact_right {
@@ -615,16 +648,17 @@
         height: inherit;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         box-sizing: border-box;
-        padding-top: 135px;
-        padding-bottom: 135px;
+        padding-top: 5%;
+        padding-bottom: 10%;
+        font-size: 16px;
     }
     
     .container_contact_right_h3 {
         font-family: "Rufina", serif;
         font-weight: 600;
-        font-size: 48px;
+        font-size: 3em;
         color: #000a2d;
         margin-bottom: 40px;
         margin-top: 0;
@@ -633,7 +667,7 @@
     .container_contact_right_p {
         font-family: "Rubik", sans-serif;
         color: #10285d;
-        font-size: 16px;
+        font-size: 1em;
         line-height: 30px;
         margin-bottom: 40px;
         margin-top: 0;
@@ -652,6 +686,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        font-size: 16px;
     }
     
     .contact_left_name,
@@ -660,7 +695,7 @@
         border: none;
         display: flex;
         font-family: arial, sans-serif;
-        font-size: 15px;
+        font-size: .9375em;
         font-weight: normal;
         font-style: normal;
         text-transform: capitalize;
@@ -677,7 +712,7 @@
         padding: 0 26px;
         margin-bottom: 30px;
         font-family: "rubik", sans-serif;
-        font-size: 16px;
+        font-size: 1em;
         font-weight: 300;
         font-style: normal;
         text-transform: capitalize;
@@ -691,7 +726,7 @@
     .contact_left_email::placeholder,
     .contact_left_message::placeholder {
         font-family: "rubik", sans-serif;
-        font-size: 16px;
+        font-size: 1em;
         font-weight: 300;
         font-style: normal;
         text-transform: capitalize;
@@ -763,14 +798,141 @@
 
 @media screen and (max-width: 1440px) {
     
+}*/
+
+
+@media screen and (max-width: 1043px) {
+    .menu_item {
+        padding: 0 11px;
+    }
+    
+    .hero_details {
+        
+    }
+    .hero_details_title {
+        font-size: 3.7em;
+    }
+    .hero_image {
+        width: 65%;
+    }
+    }
+    
+    .about {
+        height: auto;
+    }
+    
+    /* .container_mastered_technologies{
+        font-size: 15px;
+    } */
+    
+    .container_mastered_technologies_1,
+    .container_mastered_technologies_2,
+    .container_mastered_technologies_3 {
+        width: 30%;
+    }
+    
+    /* .about_details_h3,
+    .about_details_p1,
+    .about_details_p2 {
+        margin: 0;
+    }
+    
+    .about_contact_h3,
+    .about_contact_p,
+    .about_contact_a {
+        margin: 0;
+    } */
+ 
+
+@media screen and (max-width: 1023px) {
+    .header {
+        height: auto; 
+        }
+        
+    .menu_item {
+        
+    }
+    
+    .menu ol {
+        font-size: 14px;
+    }
+    
+    .header_contact_hover_pop {
+        width: 120%;
+        height: 40%;
+        
+    }
+    
+    .hero {
+        height: auto;
+    }
+    
+    .hero_details_title {
+        font-size: 3em;
+    }
+    
+    .hero_details {
+        font-size: 13px;
+    }
+    
+    .hero_container_image {
+        width: 50%;
+    }
+    .hero_image {
+        width: 65%;
+    }
+    
+    .about_details,
+    .about_contact {
+        font-size: 13px;
+    }
+    
+    .about {
+        height: auto;
+    }
+    
+    .about_contact_h3,
+    .about_contact_p {
+        margin: 0 0 15% 0;
+    }
+    
+    /* .about_details_h3,
+    .about_details_p1,
+    .about_details_p2 {
+        margin: 0;
+    }
+    
+    .about_contact_h3,
+    .about_contact_p,
+    .about_contact_a {
+        margin: 0;
+    } */
+    
+    .mastered_technologies {
+        height: auto;
+        font-size: 14px;
+    }
+    
+    .porfolio {
+        height: auto;
+        font-size: 14px;
+    }
+    
+    .container_portfolio {
+        display: block;
+        height: auto;
+    }
+    
+    .container_contact_right {
+        font-size: 14px;
+    }
+    
+    .contact {
+        height: auto;
+    }
 }
 
-
-@media screen and (max-width: 1024px) {
-    
-} */
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
     .header {
         place-content: center;
     }
@@ -786,48 +948,111 @@
         margin: auto;
         padding: 2% 0;
     }
+    
+    .hero_details{
+        width: auto; 
+        text-align: center
+    }
+    
+    .hero_container_image {
+        display: none;
+    }
+    
     .container_header_contact {
         display: none;
     }
-}
-
-
-@media screen and (max-width: 768px) {
-    .header {
-        height: auto;
-        /* border: 1px solid red; */
-    }
-    
-    .hero {
-        height: auto;
-    }
     
     .about {
-        height: auto;
+        display: block;
     }
     
-    .mastered_technologies {
-        height: auto;
+    .about_details,
+    .about_contact {
+        width: auto ;
+        text-align: center;
     }
     
-    .porfolio {
-        height: auto;
+    .about_contact {
+        margin-top: 10%;
+    }
+    
+    .mastered_technologies, {
+        font-size: 9px;
+    }
+    
+    .container_mastered_technologies {
+        display: block;
+    }
+    
+    .mastered_technologies,
+    .porfolio,
+    .container_contact_right {
+        font-size: 10px;
+        text-align: center;
+    }
+    
+    .container_mastered_technologies_1,
+    .container_mastered_technologies_2,
+    .container_mastered_technologies_3 {
+        width: auto;
     }
     
     .container_portfolio {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .portfolio_image_right {
+        /* height: auto;
+        width: 88%; */
+    }
+    .contact_left_name {
+     width: auto;   
+    }
+    .contact_left_email {
+        width: auto;
+    }
+    .contact_left_message {
+        width: auto;
+    }
+    
+    .contact_left_button {
+        width: auto;
+    }
+
+
+@media screen and (max-width: 425px) {
+    .hero_details{
+        width: auto; 
+        text-align: center
+    }
+    
+    .hero_details_title {
+        font-size: 2.5em;
+    }
+    
+    .hero_details {
+        font-size: 13px;
+    }
+    
+    .hero_buttons_a,
+    .hero_buttons_b {
+        height: 35px;
+        width: 35%;
+    }
+    
+    .about {
         display: block;
-        height: auto;
     }
     
-    .contact {
-        height: auto;
+    .about_details,
+    .about_contact {
+        width: auto ;
+        text-align: center;
+    }
+    
+    .about_contact {
+        margin-top: 10%;
     }
 }
 
-/* @media screen and (max-width: 480px) {
-    
-}
-
-@media screen and (max-width: 320px) {
-        
-} */

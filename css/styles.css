@@ -167,8 +167,7 @@
         transform-origin: left;
     }
     
-    .header_contact_hover_pop:hover::before,
-    .header_contact_hover_pop:focus::before {
+    .header_contact_hover_pop:hover::before {
         transform: scaleX(1);
     }
     

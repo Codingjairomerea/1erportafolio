@@ -46,10 +46,7 @@ const menu = document.querySelector('.menu');
 const menuItem1 = document.querySelector('.menuitem1');
 const menuItem2 = document.querySelector('.menuitem2');
 const menuItem3 = document.querySelector('.menuitem3');
-console.log(menu);
 const BurguerButton = document.querySelector('.burguer_button');
-console.log(BurguerButton);
-console.log(window.matchMedia('screen and (max-width: 767px)'));
 const ipad = window.matchMedia('screen and (max-width: 767px)');
 
 BurguerButton.addEventListener('click', showHide)
@@ -57,7 +54,6 @@ menuItem1.addEventListener('click', showHide)
 menuItem2.addEventListener('click', showHide)
 menuItem3.addEventListener('click', showHide)
 
-ipad.addListener(media_menu)
 media_menu(ipad);
 
 function media_menu(event) {    

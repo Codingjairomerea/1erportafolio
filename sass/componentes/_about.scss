@@ -1,0 +1,102 @@
+.about {
+    width: 88%;
+    height: auto;
+    /* padding: 0 127px; */
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    scroll-margin-top: 200px;
+}
+
+.about::before {
+    display: block;
+    content: " ";
+    margin-top: -103px;
+    height: 103px;
+    visibility: hidden;
+}
+
+.about_details,
+.about_contact {
+    width: 50%;
+    height: auto;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.about_details {
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.about_contact {
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+
+.about_details_h3 {
+    margin: 0 0 8% 0;
+    font-family: 'Rufina', sans-serif;
+    font-size: 1.875em;
+    font-weight: 700;
+    color: #000a2d;
+    text-transform: capitalize;
+}
+
+.about_details_p1,
+.about_details_p2 {
+    margin: 0 0 0 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+    color: #10285d;
+    line-height: 30px;
+}
+
+.about_details_p2 {
+    margin: 8% 0 0 0;
+}
+
+.about_contact_h3 {
+    font-family: 'Rufina', sans-serif;
+    margin: 0 0 10% 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #000a2d;
+    text-transform: capitalize ;
+}
+
+.about_contact_p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.25em;
+    margin: 0 0 10% 0;
+    font-weight: 500;
+    color: #464d65;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+
+.about_contact_p:hover {
+    transform: translate(15px, -15px);
+    text-decoration: underline;
+    font-size: 1.875em;
+}
+
+.about_contact_a {
+    text-decoration: none;
+}
+
+.about_contact_a {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.25em;
+    font-weight: 500;
+    margin: 0 0 auto 0;
+    color: #000a2d;
+}   

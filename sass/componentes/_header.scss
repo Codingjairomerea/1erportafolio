@@ -1,0 +1,131 @@
+.header {
+    POSITION: sticky;
+    TOP: 0;
+    z-index: 3;
+    background-color: white;
+    color: #202020;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    /* flex: 1; */
+    height: 103px;
+    align-items: center;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+    padding: 0 0;
+    margin: 0;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+
+.header ol li {
+    display: flex;
+    height: inherit;
+}
+
+.header_logo {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0px 45px; */
+    cursor: pointer;
+}
+
+.burguer_button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    right: 5%;
+    top: 1.9%;
+}
+
+.menu {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu_item {
+    color: #000025;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 22.5px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.menu_item:hover {
+    color: #ec5b53;
+    position: relative;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
+}
+
+.container_header_contact {
+    height: 103px;
+    position: relative;
+    padding-left: 22.5px;
+}
+
+
+.header_contact {
+    margin: 0px 45px;
+    width: 191px;
+    height: 54px;
+    /* padding: 54px 191px; */
+    border: none;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: white;
+    font-family: inherit;
+    font-size: .9em;
+    padding: 0 0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    position: inherit;
+    top: 50%;
+    transform: translateY(-50%);
+    --background-color: #EC5B53;
+    --accent-color: #E44239;
+}
+
+.header_contact_hover_pop {
+    cursor: pointer;
+    margin: 0;
+}
+
+.header_contact_hover_pop::before {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--accent-color);
+    transition: transform 0.4s;
+    transition-timing-function: cubic-bezier(.75, 1.67, .56, .57);
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.header_contact_hover_pop:hover::before,
+.header_contact_hover_pop:focus::before {
+    transform: scaleX(1);
+}

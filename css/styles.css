@@ -1,37 +1,11 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "icomoon";
-  src: url("../fonts/icomoon.eot?kvr0bw");
-  src: url("../fonts/icomoon.eot?kvr0bw#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?kvr0bw") format("truetype"), url("../fonts/icomoon.woff?kvr0bw") format("woff"), url("../fonts/icomoon.svg?kvr0bw#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-[class^=icon-], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-menu:before {
-  content: "";
-}
-
 body {
+  position: relative;
   font-family: "Rubik", sans-serif;
   margin: 0;
 }
@@ -112,6 +86,10 @@ body {
   transition-property: all;
   transition-duration: 0.3s;
   transition-timing-function: linear;
+}
+
+.hover_active {
+  color: #ec5b53;
 }
 
 .container_header_contact {
@@ -1253,6 +1231,10 @@ body {
     text-align: center;
     font-size: 0.8em;
   }
+
+  .footer_left {
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 425px) {
   .header_img {
@@ -1332,4 +1314,16 @@ body {
   .slider_portfolio img {
     height: 200px;
   }
+}
+.footer_left {
+  display: flex;
+}
+.footer_left p {
+  min-width: -webkit-max-content;
+  min-width: max-content;
+}
+.footer_left a {
+  margin-left: 5%;
+  text-decoration: none;
+  color: white;
 }

@@ -2,6 +2,15 @@ var slider = $(".slider_portfolio");
 var next = $(".Slider_Next_Button");
 var back = $(".Slider_Back_Button");
 
+const about = document.getElementById("about");
+const technologies = document.getElementById("technologies");
+const portfolio = document.getElementById("portfolio");
+const contact = document.getElementById("contact");
+const aboutNavBar = document.getElementById("menuitem1");
+const technologiesNavBar = document.getElementById("menuitem2");
+const portfolioNavBar = document.getElementById("menuitem3");
+
+
 $(".slider_portfolio section:last").insertBefore(
     ".slider_portfolio section:first");
     
@@ -67,3 +76,34 @@ menu.classList.remove('is_active')
     else 
 menu.classList.add('is_active')
     };
+    
+window.addEventListener("scroll", ()=> {
+    const scrolled = window.scrollY
+    const HeightAdjust = window.innerHeight/2.5
+    const HeightAbout = about.offsetTop - HeightAdjust
+    const HeightTechnologies = technologies.offsetTop - HeightAdjust
+    const HeightPortfolio = portfolio.offsetTop - HeightAdjust
+    const HeightContact = contact.offsetTop - HeightAdjust
+    
+    if (scrolled >= HeightAbout && scrolled < HeightTechnologies) {
+        aboutNavBar.classList.add("hover_active")
+        technologiesNavBar.classList.remove("hover_active")
+        portfolioNavBar.classList.remove("hover_active")
+    }
+    else if (scrolled >= HeightTechnologies && scrolled < HeightPortfolio) {
+        technologiesNavBar.classList.add("hover_active")
+        aboutNavBar.classList.remove("hover_active")
+        portfolioNavBar.classList.remove("hover_active")
+    }
+    else if (scrolled >= HeightPortfolio && scrolled < HeightContact) {
+        portfolioNavBar.classList.add("hover_active")
+        technologiesNavBar.classList.remove("hover_active")
+        aboutNavBar.classList.remove("hover_active")
+    }
+    else {
+        technologiesNavBar.classList.remove("hover_active")
+        aboutNavBar.classList.remove("hover_active")
+        portfolioNavBar.classList.remove("hover_active")
+    }
+})
+

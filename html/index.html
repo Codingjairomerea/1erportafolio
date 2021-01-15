@@ -8,6 +8,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&amp;family=Source+Sans+Pro&amp;display=swap" rel="stylesheet">
       <link rel="stylesheet" href="../css/styles.css">
+      <link rel="stylesheet" href="../icomoon/icomoon.css">
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
       <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,16 +16,16 @@
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body></body>
+    <body data-bs-spy="scroll" data-bs-target="#menu"></body>
   </html>
   <body><i class="icon-menu burguer_button"></i>
     <header class="header" id="header">
       <figure class="header_logo" onclick="window.location.href = 'index.html'"><a class="header_logo" href="https://codingjairomerea.github.io/portfolio/"></a><img class="header_img" src="https://jairomerea.com/wp-content/uploads/2020/portafolio/logohome.png" height="60" alt="Logo de http://coding.jairomerea.com"></figure>
-      <nav class="menu">
+      <nav class="menu" id="menu">
         <ol>
-          <li><a class="menu_item menuitem1" href="#about">About Me</a></li>
-          <li><a class="menu_item menuitem2" href="#technologies">Mastered Technologies</a></li>
-          <li><a class="menu_item menuitem3" href="#portfolio">Portfolio</a></li>
+          <li><a class="menu_item menuitem1" id="menuitem1" href="#about">About Me</a></li>
+          <li><a class="menu_item menuitem2" id="menuitem2" href="#technologies">Mastered Technologies</a></li>
+          <li><a class="menu_item menuitem3" id="menuitem3" href="#portfolio">Portfolio</a></li>
           <div class="container_header_contact">
             <button class="header_contact header_contact_hover_pop" onclick="window.location.href = '#contact'">Contact Me</button>
           </div>
@@ -78,7 +79,7 @@
     </section>
     <section class="porfolio" id="portfolio">
       <h2 class="portfolio_h2">my github repository and <br>other projects         </h2>
-      <section class="porfolio"><div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-pause="false">
+      <section class="porfolio"><div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-pause=“false”>
 <ol class="carousel-indicators">
 <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
 <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
@@ -140,8 +141,8 @@
     </section>
     <footer class="footer">
       <div class="container_footer">
-        <div>
-          <p>Portafolio Jairo Merea</p>
+        <div class="footer_left">
+          <p>Portafolio Jairo Merea</p><a href="https://github.com/Codingjairomerea" target="_blanck"><i class="icon-github"></i></a>
         </div>
         <div>
           <p>Diseñado por Coding Jairo Merea</p>

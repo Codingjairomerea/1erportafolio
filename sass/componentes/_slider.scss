@@ -1,0 +1,31 @@
+.Slider_Back_Button,
+.Slider_Next_Button {
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Slider_Back_Button {
+    left: 5px;
+}
+
+.Slider_Next_Button {
+    right: 5px;
+}
+
+.Slider_Back_Button:hover, 
+.Slider_Next_Button:hover {
+    background-color: rgba(255, 255, 255, 1)
+}

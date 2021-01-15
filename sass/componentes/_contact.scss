@@ -1,0 +1,180 @@
+.contact {
+    border: 0;
+    background-color: #fef8f8;
+    color: black;
+    width: 100%;
+
+    height: auto;
+    padding-left: 6%;
+    padding-right: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 16px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.container_contact_right {
+    border: 0;
+    width: 40%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container_contact_right_h3 {
+    font-family: "Rufina", serif;
+    font-weight: 600;
+    font-size: 3em;
+    color: #000a2d;
+    margin-bottom: 10%;
+    margin-top: 0;
+}
+
+.container_contact_right_p {
+    font-family: "Rubik", sans-serif;
+    color: #10285d;
+    font-size: 1em;
+    line-height: 30px;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.container_contact_right_image {
+    object-fit: scale-down;
+    object-position: left;
+    cursor: pointer;
+}
+
+.container_contact_left {
+    border: 0;
+    width: 40%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.contact_left_name,
+.contact_left_email,
+.contact_left_message {
+    border: none;
+    display: flex;
+    font-family: arial, sans-serif;
+    font-size: .9375em;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: capitalize;
+    color: #a3a3a3;
+    width: 100%;
+    height: 40px;
+    padding: 10px 26px;
+    margin-bottom: 30px;
+}
+
+.contact_left_message {
+    width: 100%;
+    height: 160px;
+    padding: 0 26px;
+    margin-bottom: 30px;
+    font-family: "rubik", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border: none;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.contact_left_name::placeholder,
+.contact_left_email::placeholder,
+.contact_left_message::placeholder {
+    font-family: "rubik", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: capitalize;
+    height: inherit;
+    color: #a3a3a3;
+}
+
+.contact_left_button {
+    border: none;
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    background-color: #ec5b53;
+    font-size: 16px;
+    font-family: "rubik", sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.social_link_twiter,
+.social_link_facebook,
+.social_link_github,
+.social_link_instagram {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+.social_link_twiter {
+    background-image: url('../images/twitter.svg');
+}
+
+.social_link_facebook {
+    background-image: url('../images/facebook.svg');
+}
+
+.social_link_github {
+    background-image: url('../images/github.svg');
+}
+
+.social_link_instagram {
+    background-image: url('../images/instagram.svg');
+}
+
+.footer {
+    background-color: #1b2127;
+    width: 100%;
+    bottom: 0;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;   
+    margin: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container_footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+    
+    
+    /* ---------------This is going to be the Media Queries Part--------------*/
+    
+/* Media Query for Desktop 1024 px */
+
+/* @media screen and (max-width: 2560px) {
+
+}
+
+@media screen and (max-width: 1440px) {
+    
+}*/
